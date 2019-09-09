@@ -24,7 +24,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: app
-    command: go run main.go
+    command: go run ./cmd/golang-app-server
     volumes:
       - .:/go/src/app
     ports:

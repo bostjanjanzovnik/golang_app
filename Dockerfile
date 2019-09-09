@@ -4,7 +4,7 @@ WORKDIR /go/src/app
 
 COPY . .
 
-RUN go build -o main .
+RUN go get -u -f ./...
 
 EXPOSE 8080
 
